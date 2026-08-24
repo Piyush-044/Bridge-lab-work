@@ -1,0 +1,182 @@
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+/* Header */
+header {
+    background-color: #f5ed0a;
+    color: rgb(5, 5, 5);
+
+    padding: 20px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 4px solid #fbd17c;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* Navigation */
+nav a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Common section settings */
+section {
+    min-height: 100vh;
+
+    padding: 120px 10% 80px;
+
+    border-bottom: 5px solid white;
+}
+
+
+/* Home section */
+/* Linear gradient is used here */
+.home {
+    background: linear-gradient(
+        120deg,
+        #a78517,
+        #bb5e44
+    );
+
+    /* Parallax-like fixed background */
+    background-attachment: fixed;
+
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.home p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+
+/* Places section */
+/* Radial gradient is used here */
+.places {
+    background: radial-gradient(
+        circle,
+        #ffffff,
+        #a8d8ea
+    );
+
+    /* Second fixed background */
+    background-attachment: fixed;
+}
+
+.places h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.places p {
+    max-width: 700px;
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    padding: 20px;
+
+    border: 2px solid #333;
+}
+
+
+/* Food section */
+.food {
+    background-color: #f3e5f5;
+
+    margin: 0;
+
+    padding-top: 120px;
+}
+
+.food h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.food p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    padding: 25px;
+
+    border: 2px solid #6a1b9a;
+}
+
+
+/* Contact section */
+.contact {
+    background-color: #dcedc8;
+
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 0.9rem;
+}

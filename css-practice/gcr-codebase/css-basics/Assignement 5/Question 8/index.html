@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 65px;
+
+            background-color: #333333;
+            color: white;
+
+            padding: 18px 25px;
+        }
+
+        /* Dashboard layout */
+        .dashboard {
+            display: flex;
+            padding-top: 65px;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            min-height: calc(100vh - 65px);
+
+            background-color: #dddddd;
+
+            padding: 25px 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        nav a {
+            color: #333333;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        nav a:hover {
+            background-color: #cccccc;
+        }
+
+        /* Main content */
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .content h2 {
+            margin-bottom: 25px;
+        }
+
+        /* Content boxes */
+        .boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+
+            background-color: white;
+
+            padding: 20px;
+
+            border: 1px solid #bbbbbb;
+
+            box-shadow: 2px 2px 6px #aaaaaa;
+        }
+
+        .box h3 {
+            margin-bottom: 12px;
+        }
+
+        .box p {
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333333;
+            color: white;
+
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            .dashboard {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                min-height: auto;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Dashboard</h1>
+    </header>
+
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2>Menu</h2>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Projects</a>
+                <a href="#">Settings</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <h2>Dashboard Overview</h2>
+
+            <div class="boxes">
+
+                <section class="box">
+                    <h3>My Projects</h3>
+
+                    <p>
+                        I am working on different projects using
+                        HTML and CSS.
+                    </p>
+                </section>
+
+
+                <section class="box">
+                    <h3>My Progress</h3>
+
+                    <p>
+                        I am learning web development and
+                        practicing CSS regularly.
+                    </p>
+                </section>
+
+
+                <section class="box">
+                    <h3>Upcoming Tasks</h3>
+
+                    <p>
+                        I have to complete my assignments and
+                        practice more web development.
+                    </p>
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>My Dashboard</p>
+    </footer>
+
+</body>
+
+</html>

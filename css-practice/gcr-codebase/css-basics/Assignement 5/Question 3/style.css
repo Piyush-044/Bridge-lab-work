@@ -1,0 +1,93 @@
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9bd4ff;
+    color: #222;
+}
+
+
+/* Main heading */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+
+/* Team cards container */
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+/* Common card design */
+.card {
+    flex: 1;
+
+    background-color: rgb(255, 193, 236);
+
+    /* Box Model */
+    margin: 10px;
+    padding: 30px;
+
+    border: 2px solid #333;
+    border-radius: 12px;
+
+    /* Shadow effect */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+
+/* Card heading */
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* Highlighted Team Lead card */
+.team-lead {
+    background-color: #f4b78f;
+    border: 3px solid #dff896;
+}
+
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+
+    .team {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
