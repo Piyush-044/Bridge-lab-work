@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outline and Focus Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* Form ka main box */
+        .form-box {
+            width: 450px;
+            margin: auto;
+
+            background-color: white;
+            padding: 25px;
+
+            border-radius: 10px;
+
+            box-shadow: 0px 5px 15px gray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Form elements ko vertical rakhna */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Input aur textarea */
+        input,
+        textarea {
+            padding: 12px;
+
+            border: 1px solid gray;
+            border-radius: 8px;
+
+            font-size: 16px;
+        }
+
+        /* Focus hone par outline */
+        input:focus,
+        textarea:focus {
+            outline: 3px solid blue;
+            outline-offset: 3px;
+        }
+
+        /* Button */
+        button {
+            padding: 12px;
+
+            background-color: black;
+            color: white;
+
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+
+        /* Different outline examples */
+        .solid {
+            outline: 3px solid blue;
+            outline-offset: 3px;
+            padding: 10px;
+        }
+
+        .dashed {
+            outline: 3px dashed green;
+            outline-offset: 3px;
+            padding: 10px;
+        }
+
+        .dotted {
+            outline: 3px dotted red;
+            outline-offset: 3px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h1>Contact Form</h1>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea rows="5"
+                placeholder="Write your message"></textarea>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <h2>Outline Examples</h2>
+
+        <p class="solid">
+            Solid Outline
+        </p>
+
+        <p class="dashed">
+            Dashed Outline
+        </p>
+
+        <p class="dotted">
+            Dotted Outline
+        </p>
+
+    </div>
+
+</body>
+</html>

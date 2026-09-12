@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced CSS Selectors</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        /* Attribute selector
+           type="text" wale input ko select karta hai */
+        input[type="text"] {
+            border: 3px solid blue;
+            padding: 10px;
+        }
+
+        /* Attribute selector
+           https se start hone wale link ko select karta hai */
+        a[href^="https"] {
+            color: green;
+        }
+
+        /* :hover pseudo-class */
+        li:hover {
+            background-color: yellow;
+        }
+
+        /* :focus pseudo-class */
+        input:focus {
+            outline: 3px solid orange;
+        }
+
+        /* :nth-child() */
+        li:nth-child(odd) {
+            color: purple;
+        }
+
+        /* Child combinator >
+           ul ke direct li elements */
+        ul > li {
+            padding: 8px;
+        }
+
+        /* Descendant selector
+           .box ke andar saare h2 */
+        .box h2 {
+            color: darkblue;
+        }
+
+        /* Adjacent sibling +
+           h2 ke turant baad input */
+        h2 + input {
+            margin-top: 10px;
+        }
+
+        /* General sibling ~
+           h2 ke baad aane wale links */
+        h2 ~ a {
+            margin-right: 15px;
+        }
+
+        /* Pseudo-element ::before */
+        h1::before {
+            content: "★ ";
+        }
+
+        /* Pseudo-element ::after */
+        h1::after {
+            content: " ★";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Advanced CSS Selectors</h1>
+
+    <div class="box">
+
+        <h2>My List</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+
+    </div>
+
+    <div class="box">
+
+        <h2>Input Example</h2>
+
+        <input type="text" placeholder="Enter your name">
+
+        <br><br>
+
+        <a href="https://google.com">HTTPS Link</a>
+
+        <a href="page.html">Normal Link</a>
+
+    </div>
+
+</body>
+</html>

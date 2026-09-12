@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transformations</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Boxes ko horizontal arrange karna */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 70px;
+        }
+
+        .item {
+            width: 120px;
+        }
+
+        /* Common box styling */
+        .box {
+            width: 120px;
+            height: 120px;
+
+            background-color: blue;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 0.4s ease;
+        }
+
+        /* Rotate */
+        .rotate:hover {
+            transform: rotate(20deg);
+        }
+
+        /* Scale */
+        .scale:hover {
+            transform: scale(1.2);
+        }
+
+        /* Translate */
+        .translate:hover {
+            transform: translate(20px, -20px);
+        }
+
+        /* Skew */
+        .skew:hover {
+            transform: skew(15deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transformations</h1>
+
+    <div class="container">
+
+        <div class="item">
+            <div class="box rotate">
+                Rotate
+            </div>
+            <p>rotate()</p>
+        </div>
+
+        <div class="item">
+            <div class="box scale">
+                Scale
+            </div>
+            <p>scale()</p>
+        </div>
+
+        <div class="item">
+            <div class="box translate">
+                Move
+            </div>
+            <p>translate()</p>
+        </div>
+
+        <div class="item">
+            <div class="box skew">
+                Skew
+            </div>
+            <p>skew()</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

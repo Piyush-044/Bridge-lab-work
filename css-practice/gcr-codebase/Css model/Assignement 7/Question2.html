@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Height and Width Practice</title>
+
+    <style>
+        /* Page ki basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Boxes ko center karne ke liye Flexbox */
+        .container {
+            min-height: 80vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        /* Sabhi boxes ki common styling */
+        .box {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Box 1 - px unit */
+        .box1 {
+            width: 200px;
+            height: 150px;
+            background-color: blue;
+        }
+
+        /* Box 2 - percentage aur vh */
+        .box2 {
+            width: 30%;
+            height: 20vh;
+            min-height: 150px;
+            background-color: green;
+        }
+
+        /* Box 3 - max-width aur overflow */
+        .box3 {
+            width: 40%;
+            max-width: 300px;
+            height: 150px;
+
+            background-color: orange;
+
+            /* Extra text box ke bahar nahi jayega */
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Height and Width Practice</h1>
+
+    <div class="container">
+
+        <div class="box box1">
+            <h2>Box 1</h2>
+            <p>Width: 200px</p>
+            <p>Height: 150px</p>
+        </div>
+
+        <div class="box box2">
+            <h2>Box 2</h2>
+            <p>Width: 30%</p>
+            <p>Height: 20vh</p>
+        </div>
+
+        <div class="box box3">
+            <h2>Box 3</h2>
+            <p>Max Width: 300px</p>
+            <p>Overflow: Auto</p>
+            <p>
+                This is extra text to demonstrate
+                the overflow property.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

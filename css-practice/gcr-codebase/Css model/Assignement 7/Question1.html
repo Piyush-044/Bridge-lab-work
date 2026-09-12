@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borders and Padding</title>
+
+    <style>
+        /* Page ki basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Boxes ko ek row mein rakhna */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        /* Common box styling */
+        .box {
+            width: 150px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+
+            /* Hover ko smooth banane ke liye */
+            transition: border-color 0.3s ease;
+        }
+
+        /* Different border styles */
+
+        .solid {
+            border: 5px solid blue;
+        }
+
+        .dashed {
+            border: 5px dashed green;
+        }
+
+        .double {
+            border: 5px double red;
+        }
+
+        .groove {
+            border: 5px groove purple;
+            border-radius: 20px;
+        }
+
+        /* Mouse le jaane par border color change */
+        .box:hover {
+            border-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Borders and Padding</h1>
+
+    <div class="container">
+
+        <div class="box solid">
+            Solid Border
+        </div>
+
+        <div class="box dashed">
+            Dashed Border
+        </div>
+
+        <div class="box double">
+            Double Border
+        </div>
+
+        <div class="box groove">
+            Groove Border
+        </div>
+
+    </div>
+
+</body>
+</html>

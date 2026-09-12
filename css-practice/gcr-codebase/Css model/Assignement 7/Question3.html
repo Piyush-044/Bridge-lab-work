@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gradient Background</title>
+
+    <style>
+        /* Basic page styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Main content */
+        main {
+            padding-top: 80px;
+        }
+
+        /* First section - Linear Gradient */
+        .linear {
+            height: 70vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            /* Linear gradient */
+            background: linear-gradient(
+                to right,
+                blue,
+                purple
+            );
+        }
+
+        /* Second section - Radial Gradient */
+        .radial {
+            height: 70vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            /* Radial gradient */
+            background: radial-gradient(
+                circle,
+                orange,
+                red
+            );
+
+            /* Parallax-like effect */
+            background-attachment: fixed;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fixed Header -->
+    <header>
+        <h1>My Gradient Website</h1>
+    </header>
+
+    <main>
+
+        <!-- Linear Gradient Section -->
+        <section class="linear">
+
+            <h2>Linear Gradient</h2>
+
+            <p>
+                This section uses a
+                linear-gradient background.
+            </p>
+
+        </section>
+
+        <!-- Radial Gradient Section -->
+        <section class="radial">
+
+            <h2>Radial Gradient</h2>
+
+            <p>
+                This section uses a
+                radial-gradient background.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>My Website Footer</p>
+    </footer>
+
+</body>
+</html>

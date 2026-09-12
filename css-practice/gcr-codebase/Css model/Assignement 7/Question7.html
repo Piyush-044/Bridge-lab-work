@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typography and Text Styling</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Article ko center karna */
+        .article {
+            width: 70%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+        }
+
+        /* Main heading */
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        /* Sub heading */
+        h2 {
+            font-family: Verdana, sans-serif;
+            color: blue;
+        }
+
+        /* Paragraph */
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+
+            /* Lines ke beech space */
+            line-height: 1.7;
+
+            /* Letters ke beech space */
+            letter-spacing: 1px;
+
+            /* Text alignment */
+            text-align: justify;
+        }
+
+        /* mark element */
+        mark {
+            background-color: yellow;
+            color: red;
+        }
+
+        /* strong element */
+        strong {
+            color: blue;
+        }
+
+        /* em element */
+        em {
+            color: purple;
+        }
+
+        /* First letter ko bada karna */
+        .intro::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* First line ko bold karna */
+        .intro::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="article">
+
+        <h1>Learning Web Development</h1>
+
+        <p class="intro">
+            Web development is an interesting skill.
+            HTML creates the structure of a webpage
+            and CSS makes the webpage beautiful.
+        </p>
+
+        <h2>Why Learn CSS?</h2>
+
+        <p>
+            CSS helps us change the
+            <strong>color, size and layout</strong>
+            of a webpage.
+        </p>
+
+        <p>
+            We can also use
+            <mark>highlighted text</mark>
+            and <em>italic text</em>
+            to make our content attractive.
+        </p>
+
+    </div>
+
+</body>
+</html>

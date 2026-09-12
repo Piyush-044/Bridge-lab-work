@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar</title>
+
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+
+            padding: 12px 20px;
+
+            border: 1px solid gray;
+
+            /* Smooth hover effect */
+            transition: all 0.3s ease;
+        }
+
+        /* Mouse le jaane par */
+        nav a:hover {
+            background-color: gray;
+            color: yellow;
+        }
+
+        /* Active link */
+        nav a.active {
+            background-color: blue;
+            border-bottom: 4px solid yellow;
+        }
+
+        /* Main content */
+        main {
+            min-height: 60vh;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 700px se chhoti screen par
+           navbar vertical ho jayega */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>My Website</h1>
+
+        <!-- Navigation -->
+        <nav>
+
+            <a href="#" class="active">
+                Home
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#">
+                Services
+            </a>
+
+            <a href="#">
+                Gallery
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <h2>Welcome to My Website</h2>
+
+        <p>
+            This is a simple navigation bar
+            using HTML and CSS.
+        </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Website
+        </p>
+
+    </footer>
+
+</body>
+</html>

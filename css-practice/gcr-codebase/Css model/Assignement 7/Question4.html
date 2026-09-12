@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shadows and Depth</title>
+
+    <style>
+        /* Page ki basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Heading par text shadow */
+        h1 {
+            text-shadow: 3px 3px 5px gray;
+        }
+
+        /* Cards ko ek row mein rakhna */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        /* Common card styling */
+        .card {
+            width: 200px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+
+            /* Smooth animation */
+            transition: all 0.3s ease;
+        }
+
+        /* Card 1 ka shadow */
+        .card1 {
+            box-shadow: 3px 3px 10px gray;
+        }
+
+        /* Card 2 ka shadow */
+        .card2 {
+            box-shadow: 0px 8px 15px gray;
+        }
+
+        /* Card 3 ka shadow */
+        .card3 {
+            box-shadow: 0px 0px 20px gray;
+        }
+
+        /* Hover karne par card upar uthta hai */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Shadows and Depth Effect</h1>
+
+    <div class="container">
+
+        <div class="card card1">
+            <h2>Card 1</h2>
+            <p>Simple Box Shadow</p>
+        </div>
+
+        <div class="card card2">
+            <h2>Card 2</h2>
+            <p>Large Box Shadow</p>
+        </div>
+
+        <div class="card card3">
+            <h2>Card 3</h2>
+            <p>Soft Box Shadow</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
