@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+
+            background-color: #333;
+            color: white;
+
+            padding: 15px 25px;
+
+            z-index: 10;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            position: relative;
+
+            height: 450px;
+
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+                url("https://picsum.photos/id/1018/1200/600");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+        }
+
+        /* About section */
+        .about {
+            display: flex;
+            gap: 30px;
+
+            padding: 50px;
+
+            background-color: white;
+        }
+
+        .about-text {
+            flex: 1;
+
+            padding: 20px;
+
+            border: 1px solid #bbb;
+            outline: 2px solid #ddd;
+        }
+
+        .about-text h2 {
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            line-height: 1.6;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 250px;
+
+            object-fit: cover;
+
+            border: 3px solid #555;
+        }
+
+        /* Services */
+        .services {
+            padding: 50px;
+
+            background: linear-gradient(
+                to right,
+                #f2f2f2,
+                #d9eaf7
+            );
+
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+        }
+
+        .service-boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .service {
+            flex: 1;
+
+            background-color: white;
+
+            padding: 25px;
+
+            margin: 5px;
+
+            border: 1px solid #aaa;
+
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            position: relative;
+
+            padding: 50px;
+
+            background-color: white;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        form {
+            max-width: 500px;
+
+            margin: auto;
+
+            padding: 25px;
+
+            border: 1px solid #aaa;
+
+            background-color: #f7f7f7;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+
+            padding: 10px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid #999;
+        }
+
+        button {
+            padding: 10px 20px;
+
+            background-color: #333;
+            color: white;
+
+            border: none;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Fixed button */
+        .top-button {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            background-color: #333;
+            color: white;
+
+            padding: 10px;
+
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .about {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .service-boxes {
+                flex-direction: column;
+            }
+
+            .services {
+                padding: 30px;
+            }
+
+            .contact {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h2>My Website</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <div>
+            <h1>Welcome to My Website</h1>
+
+            <p>
+                A simple website created using HTML and CSS.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="about-text">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I am learning web development and creating
+                websites using HTML and CSS. I enjoy learning new
+                concepts and practicing by making small projects.
+            </p>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img
+                src="https://picsum.photos/id/1025/600/400"
+                alt="About image"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <h2>My Services</h2>
+
+        <div class="service-boxes">
+
+            <div class="service">
+                <h3>Web Design</h3>
+
+                <p>
+                    Creating simple and clean webpages.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>HTML Projects</h3>
+
+                <p>
+                    Building webpages using HTML.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>CSS Styling</h3>
+
+                <p>
+                    Adding layouts and styles using CSS.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                rows="5"
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Fixed button -->
+    <a href="#home" class="top-button">Top</a>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Website
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
