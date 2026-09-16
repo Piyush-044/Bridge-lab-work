@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 50px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+button {
+    padding: 15px 30px;
+
+    background-color: blue;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    box-shadow: 0 3px 8px gray;
+
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+}
+button:hover {
+    background-color: green;
+
+    transform: scale(1.1);
+
+    box-shadow: 0 6px 15px gray;
+}
+button:active {
+    transform: scale(0.95);
+}
+button:focus {
+    outline: 3px solid orange;
+}

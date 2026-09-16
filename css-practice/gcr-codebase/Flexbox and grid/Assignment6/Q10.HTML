@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: black;
+            color: white;
+
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Main has 2 columns */
+        main {
+            display: grid;
+
+            grid-template-columns: 2fr 1fr;
+
+            gap: 20px;
+
+            padding: 20px;
+        }
+
+        /* Article */
+        article {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        /* Three boxes inside article */
+        .boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+
+            background-color: lightblue;
+            padding: 25px;
+
+            text-align: center;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        /* Animation */
+        h1 {
+            animation: moveTitle 2s;
+        }
+
+        @keyframes moveTitle {
+
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <article>
+
+            <h2>My Article</h2>
+
+            <p>
+                This is my responsive webpage.
+            </p>
+
+            <!-- Three Flexbox boxes -->
+            <div class="boxes">
+
+                <div class="box">
+                    <h3>Box 1</h3>
+                    <p>HTML</p>
+                </div>
+
+                <div class="box">
+                    <h3>Box 2</h3>
+                    <p>CSS</p>
+                </div>
+
+                <div class="box">
+                    <h3>Box 3</h3>
+                    <p>Grid</p>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside>
+
+            <h2>Sidebar</h2>
+
+            <p>Latest Posts</p>
+            <p>Categories</p>
+            <p>About Me</p>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+</html>

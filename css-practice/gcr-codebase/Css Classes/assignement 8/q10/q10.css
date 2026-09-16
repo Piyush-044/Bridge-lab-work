@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+header {
+    background-color: blue;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+}
+.card {
+    width: 600px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px gray;
+}
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid blue;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+.gender {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender input {
+    width: auto;
+}
+.terms {
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.terms input {
+    width: auto;
+}
+button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: blue;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+button:hover {
+    background-color: darkblue;
+}
+
+.reset {
+    background-color: gray;
+}
+
+.reset:hover {
+    background-color: black;
+}
+footer {
+    background-color: black;
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}
+@media (max-width: 650px) {
+
+    .card {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+}

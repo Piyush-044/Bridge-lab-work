@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3 Section Homepage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main */
+        main {
+            min-height: 70vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 30px;
+        }
+
+        .box {
+            width: 200px;
+            padding: 40px;
+
+            background-color: lightblue;
+            text-align: center;
+
+            transition: 0.3s;
+        }
+
+        /* Hover par rotate */
+        .box:hover {
+            transform: rotate(2deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </header>
+
+    <main>
+
+        <div class="box">
+            <h2>Services</h2>
+            <p>Our Services</p>
+        </div>
+
+        <div class="box">
+            <h2>Projects</h2>
+            <p>My Projects</p>
+        </div>
+
+        <div class="box">
+            <h2>Contact</h2>
+            <p>Contact Me</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+</html>

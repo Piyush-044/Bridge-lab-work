@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+p {
+    color: blue;
+}
+.special {
+    color: green;
+    font-weight: bold;
+}
+#main-heading {
+    color: red;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    background-color: yellow;
+}
+ul li {
+    color: purple;
+}
+div > p {
+    background-color: lightgray;
+}
+h2 + p {
+    font-style: italic;
+}
+
+h2 ~ p {
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

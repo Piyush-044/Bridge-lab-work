@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* 4 columns */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Products</h1>
+
+    <div class="products">
+
+        <div class="card">
+            <h2>Product 1</h2>
+            <p>₹500</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 2</h2>
+            <p>₹700</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 3</h2>
+            <p>₹900</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 4</h2>
+            <p>₹600</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 5</h2>
+            <p>₹800</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 6</h2>
+            <p>₹1000</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 7</h2>
+            <p>₹1200</p>
+        </div>
+
+        <div class="card">
+            <h2>Product 8</h2>
+            <p>₹1500</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

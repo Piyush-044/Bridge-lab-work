@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Main */
+        main {
+            min-height: 70vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 50px;
+            padding: 30px;
+        }
+
+        .about,
+        .image {
+            width: 40%;
+        }
+
+        .image img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            header,
+            main {
+                flex-direction: column;
+            }
+
+            .about,
+            .image {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Name</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am learning web development.
+                I am learning HTML and CSS.
+            </p>
+        </section>
+
+        <section class="image">
+            <img src="https://via.placeholder.com/250"
+                 alt="My Photo">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>

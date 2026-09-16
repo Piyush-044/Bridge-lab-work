@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Section</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        /* Pricing cards */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 200px;
+            padding: 30px;
+
+            background-color: white;
+
+            transition: 0.3s;
+
+            /* Fade-in animation */
+            animation: fadeIn 1s;
+        }
+
+        /* Middle card is bigger */
+        .middle {
+            background-color: lightblue;
+            transform: scale(1.1);
+        }
+
+        /* Hover */
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Fade animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 750px) {
+            .pricing {
+                flex-direction: column;
+            }
+
+            .middle {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Choose Your Plan</h1>
+
+    <div class="pricing">
+
+        <div class="card">
+            <h2>Basic</h2>
+            <h3>₹199</h3>
+            <p>1 User</p>
+            <p>10 GB Storage</p>
+        </div>
+
+        <div class="card middle">
+            <h2>Pro</h2>
+            <h3>₹499</h3>
+            <p>5 Users</p>
+            <p>50 GB Storage</p>
+        </div>
+
+        <div class="card">
+            <h2>Premium</h2>
+            <h3>₹999</h3>
+            <p>10 Users</p>
+            <p>100 GB Storage</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

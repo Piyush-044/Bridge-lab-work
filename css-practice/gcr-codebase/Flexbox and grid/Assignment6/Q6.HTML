@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Complete layout */
+        .blog {
+            display: grid;
+
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            grid-area: header;
+
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+        }
+
+        /* Sidebar */
+        aside {
+            grid-area: sidebar;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        /* Main content */
+        main {
+            grid-area: content;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .post {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        /* Footer */
+        footer {
+            grid-area: footer;
+
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Below 800px */
+        @media (max-width: 800px) {
+
+            .blog {
+                grid-template-areas:
+                    "header"
+                    "content"
+                    "sidebar"
+                    "footer";
+
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blog">
+
+        <header>
+            <h1>My Blog</h1>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <aside>
+            <h2>Categories</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Web Design</p>
+        </aside>
+
+        <main>
+
+            <article class="post">
+                <h2>Learning HTML</h2>
+                <p>
+                    HTML is used to create the structure
+                    of a webpage.
+                </p>
+            </article>
+
+            <article class="post">
+                <h2>Learning CSS</h2>
+                <p>
+                    CSS is used to style a webpage.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Contact: example@gmail.com</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

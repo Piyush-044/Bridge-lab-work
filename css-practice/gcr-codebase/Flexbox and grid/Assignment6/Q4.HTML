@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main dashboard */
+        .dashboard {
+            display: grid;
+
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px auto;
+
+            gap: 10px;
+            min-height: 100vh;
+        }
+
+        /* Header full width */
+        header {
+            grid-column: span 2;
+
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        aside a {
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Main content */
+        main {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            padding: 20px;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+
+            transition: 0.3s;
+        }
+
+        /* One box takes two columns */
+        .big-box {
+            grid-column: span 2;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px gray;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            .dashboard {
+                display: block;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .big-box {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header>
+            <h1>My Dashboard</h1>
+        </header>
+
+        <aside>
+            <h2>Menu</h2>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <main>
+
+            <div class="box">
+                <h2>Box 1</h2>
+                <p>Users</p>
+            </div>
+
+            <div class="box">
+                <h2>Box 2</h2>
+                <p>Orders</p>
+            </div>
+
+            <div class="box">
+                <h2>Box 3</h2>
+                <p>Sales</p>
+            </div>
+
+            <div class="box">
+                <h2>Box 4</h2>
+                <p>Reports</p>
+            </div>
+
+            <div class="box big-box">
+                <h2>Big Box</h2>
+                <p>This box spans two columns.</p>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

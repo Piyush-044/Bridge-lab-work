@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Responsive Grid */
+        .gallery {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+
+            gap: 20px;
+        }
+
+        .photo {
+            background-color: white;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        /* Image */
+        .photo img {
+            width: 100%;
+            height: 200px;
+
+            object-fit: cover;
+
+            transition: transform 0.5s ease;
+        }
+
+        /* Hover zoom */
+        .photo img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Photo Gallery</h1>
+
+    <div class="gallery">
+
+        <figure class="photo">
+            <img src="https://picsum.photos/400/300?1"
+                 alt="Photo 1">
+            <figcaption>Nature</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="https://picsum.photos/400/300?2"
+                 alt="Photo 2">
+            <figcaption>Mountain</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="https://picsum.photos/400/300?3"
+                 alt="Photo 3">
+            <figcaption>Forest</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="https://picsum.photos/400/300?4"
+                 alt="Photo 4">
+            <figcaption>Beach</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="https://picsum.photos/400/300?5"
+                 alt="Photo 5">
+            <figcaption>City</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="https://picsum.photos/400/300?6"
+                 alt="Photo 6">
+            <figcaption>Travel</figcaption>
+        </figure>
+
+    </div>
+
+</body>
+</html>
