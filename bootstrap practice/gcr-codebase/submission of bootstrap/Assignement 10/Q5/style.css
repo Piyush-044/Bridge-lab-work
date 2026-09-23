@@ -1,0 +1,22 @@
+/* Custom Bootstrap theme */
+
+:root {
+    --bs-primary: #6f42c1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f0ff;
+}
+
+header {
+    background-color: #6f42c1;
+}
+
+.card {
+    border: 2px solid #6f42c1;
+}
+
+footer {
+    background-color: #6f42c1;
+}

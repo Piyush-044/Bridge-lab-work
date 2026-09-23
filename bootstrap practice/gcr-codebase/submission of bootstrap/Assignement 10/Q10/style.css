@@ -1,0 +1,21 @@
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #d0eea5;
+    color: rgb(4, 4, 4);
+}
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.progress {
+    height: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
