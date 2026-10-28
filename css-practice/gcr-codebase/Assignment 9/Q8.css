@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+
+.comparison {
+    display: flex;
+    gap: 20px;
+}
+
+.comparison section {
+    flex: 1;
+}
+
+.comparison img {
+    width: 100%;
+    transition: filter 0.5s;
+}
+
+.filtered {
+    filter: brightness(50%) contrast(150%);
+}
+
+.filtered:hover {
+    filter: none;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+    }
+}

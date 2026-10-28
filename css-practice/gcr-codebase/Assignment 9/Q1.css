@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.blur { filter: blur(3px); }
+.gray { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.bright { filter: brightness(50%); }
+.contrast { filter: contrast(200%); }
+.hue { filter: hue-rotate(120deg); }
+
+.gallery img:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

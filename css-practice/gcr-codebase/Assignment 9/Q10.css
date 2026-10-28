@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background: #123;
+    color: white;
+    text-align: center;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 80vh;
+}
+
+aside {
+    padding: 20px;
+    background: #ddd;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards section {
+    padding: 25px;
+    background: #e0f2fe;
+    box-shadow: 0 3px 8px #ccc;
+    animation: appear 0.8s;
+    transition: 0.3s;
+}
+
+.cards section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px #999;
+}
+
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 750px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

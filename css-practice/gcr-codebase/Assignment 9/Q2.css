@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+section {
+    flex: 1;
+    padding: 30px;
+    background: lightblue;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    header, .features {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section {
+    padding: 25px;
+    background: #e0f2fe;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+section:hover {
+    background: #bae6fd;
+    transform: translateY(-5px);
+}
+
+code {
+    display: block;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
