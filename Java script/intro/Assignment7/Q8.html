@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Dropdown</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        #dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        #options {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            width: 150px;
+        }
+
+        #options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: white;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        #options button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Custom Dropdown</h2>
+
+    <div id="dropdown">
+        <button id="dropdownButton">Select Branch ▼</button>
+
+        <div id="options">
+            <button data-value="CSE">CSE</button>
+            <button data-value="IT">IT</button>
+            <button data-value="ECE">ECE</button>
+            <button data-value="DS">Data Science</button>
+        </div>
+    </div>
+
+    <p id="selectedValue">Selected: None</p>
+
+    <script src="Q8.js"></script>
+</body>
+</html>

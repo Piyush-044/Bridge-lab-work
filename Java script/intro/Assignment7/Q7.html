@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Coordinates</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        #mouseBox {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            position: relative;
+            background: #f2f2f2;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Mouse Coordinates Logger</h2>
+
+    <p id="coordinates">X: 0, Y: 0</p>
+
+    <div id="mouseBox"></div>
+
+    <script src="Q7.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        input {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            width: 250px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm" novalidate>
+        <label>Name</label>
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+
+        <br>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <span class="error" id="emailError"></span>
+
+        <br>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <span class="error" id="passwordError"></span>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3 id="successMessage"></h3>
+
+    <script src="Q9.js"></script>
+</body>
+</html>
